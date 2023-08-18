@@ -9,10 +9,9 @@ export default function ImgComp(props: Props) {
   const { url, title, text } = props;
   return (
     <div
-      className="cursor-pointer  imgContainer   h-[300px]  lg:h-[800px] rounded-3xl relative flex flex-col justify-end transition-all duration-500 "
+      className="cursor-pointer  h-[300px]  lg:h-[800px] rounded-3xl relative flex flex-col justify-end transition-all duration-500 "
       style={{
         background: `url(${url})`,
-        backgroundSize: "contain",
       }}
     >
       {/* Regular text shown when larger*/}

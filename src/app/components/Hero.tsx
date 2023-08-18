@@ -56,7 +56,7 @@ export default function Hero() {
     <main className="py-16 -z-40 max-w-[1600px] mx-auto px-5 ">
       <ImgComp url={images[count]} title={text[count]} text={buttons[count]} />
       {/* Smaller box on mobile */}
-      <div className="h-52 w-full"></div>
+      <div className="h-52 w-full md:hidden"></div>
       <article
         style={{
           backgroundColor: colors[count],
