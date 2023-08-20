@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import { HiMagnifyingGlass } from "react-icons/hi2";
-import { AiOutlineMenu } from "react-icons/ai";
 
 import NavBarItem from "./NavBarItem";
 import Icons from "./icons";
+import BurgerMenu from "./BurgerMenu";
 export default function NavBar() {
   return (
     <nav className="text-ThemeGray shadow bg-white z-40 sticky top-0 lg:static ">
@@ -14,9 +14,7 @@ export default function NavBar() {
           <input type="text" placeholder="Search our store" />
         </div>
         <div className="lg:hidden flex items-center gap-4 ">
-          <div className=" rgb(102, 102, 102)">
-            <AiOutlineMenu size={30} />
-          </div>
+          <BurgerMenu />
           <Image
             src="/logo.avif"
             alt="logo"

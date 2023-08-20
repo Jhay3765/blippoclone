@@ -9,18 +9,44 @@ body {
   text-shadow: 3px 3px 0px #9a8cc3;
 }
 
-.LeftAnimate > * {
-  animation: move 5s linear infinite;
+.LeftAnimate {
+  transition: all 1s;
+  animation: move 2s ease-in;
 }
 @keyframes move {
   from {
-    transform: translateX(100%);
+    opacity: 0;
+    transform: translateX(-100%);
   }
   to {
-    transform: translateX(-100%);
+    opacity: 1;
+    transform: translateX(0%);
   }
 }
 
 .imgContainer {
   background-size: cover;
+}
+.item1 {
+  animation: item1 14s linear infinite both;
+}
+
+@keyframes item1 {
+  from {
+    transform: translateX(1600px);
+  }
+  to {
+    transform: translateX(-1600px);
+  }
+}
+.item2 {
+  animation: item2 14s 7s linear infinite both;
+}
+@keyframes item2 {
+  from {
+    transform: translateX(1600px);
+  }
+  to {
+    transform: translateX(-1600px);
+  }
 }
